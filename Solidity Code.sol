@@ -244,7 +244,8 @@ contract DiplomasContract {
 
     //the modifier checks if the sender's address has the admin role
     modifier onlyAdmin() {
-        if (!admins[msg.sender]) revert InvalidAddress(msg.sender);
+        if (!admins[msg.sender]) 
+            revert InvalidAddress(msg.sender);
         _;
     }
 
