@@ -226,7 +226,7 @@ contract DiplomasContract {
         return PaginationData(size, returnDiplomas);
     }
 
-    function checkAddressRoles() public view returns (ReturnData memory) {
+    function frontendData() public view returns (ReturnData memory) {
         string[] memory _universityNames = new string[](numOfUniversities);
 
         for (uint256 i = 0; i < numOfUniversities; i++) {
